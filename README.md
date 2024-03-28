@@ -10,8 +10,6 @@ Este é um projeto para a disciplina de **Projeto Integrador** da UTFPR de Campo
 
 Nosso projeto em específico é uma loja virtual (e-commerce) de sapatos e bolsas. O site trabalha com duas frentes: para o usuário e para os administradores. A parte de usuário terá tela de vendas dos sapatos e tela de venda das bolsas, bem como uma tela de login, cadastro e carrinho de compras. Para a parte do administrador teremos apenas uma tela de preenchimento de novos produtos.
 
-![ReadmeFiles/ModeloConceitual.jpg](ReadmeFiles/ModeloConceitual.jpg)
-
 ## Tecnologias utilizadas
 
 - React
