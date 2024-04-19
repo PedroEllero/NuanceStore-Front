@@ -9,19 +9,19 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 <body>
-    <div class="main-login">
+    <div class="main-login" id="loginPage">
         <div class="left-login">
             <h1>Faça login<br>Conecte seus talentos</h1>
             <img src="CAMINHAO.svg" class="left-login-image" alt="Logo animação">
-        </div>
+        </div> 
         <div class="main">  	
             <input type="checkbox" id="chk" aria-hidden="true">
     
                 <div class="login">
                     <form class="form">
                         <label for="chk" aria-hidden="true">Log in</label>
-                        <input class="input" type="email" name="email" placeholder="Email" required="">
-                        <input class="input" type="password" name="pswd" placeholder="Senha" required="">
+                        <input id="emailLogin" class="input" type="email" pattern=".+@example\.com" placeholder="Email" required="">
+                        <input id="passwordLogin" class="input" type="password" placeholder="Senha" required="">
                         <button id="buttonLogin">Entrar</button>
                     </form>
                 </div>
@@ -29,13 +29,16 @@
           <div class="register">
                     <form class="form">
                         <label for="chk" aria-hidden="true">Criar Conta</label>
-                        <input class="input" type="text" name="txt" placeholder="Nome de Usuário" required="">
-                        <input class="input" type="email" name="mail" placeholder="Email" required="">
-                        <input class="input" type="text" name="pswrd" placeholder="Password" required="">
+                        <input id="nomeRegistro"class="input" type="text" placeholder="Nome de Usuário" required="">
+                        <input id="emailRegistro" class="input" type="email" placeholder="Email" pattern=".+@example\.com" required="">
+                        <input id="passwordRegistro" class="input" type="password" placeholder="Password"  required="">
                         <button id="buttonRegister">Register</button>
                     </form>
                 </div>
         </div>
+    </div>
+    <div class="main-home" id="homePage">
+        <p> usuário logado, eba!</p>
     </div>
     <script src="register.js"></script>
 </body>
