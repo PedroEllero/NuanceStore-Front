@@ -1,4 +1,5 @@
 const urlGetUser = "http://127.0.0.1:8000/api/users/"
+const urlUserLogin = "http://127.0.0.1:8000/api/user/login"
 
 document.getElementById("buttonRegister").addEventListener("click", registerNewUser)
 document.getElementById("buttonLogin").addEventListener("click", loginUser)
@@ -24,7 +25,7 @@ async function loginUser(){
     const strPassword = document.getElementById("passwordLogin").value.toString()
     const user = {email: strEmail, senha: strPassword}
     
-    await axios.post(urlGetUser, user)
+    await axios.post(urlUserLogin, user)
     .then(response => {
         console.log(response.data)
         const login = document.getElementById("loginPage")
